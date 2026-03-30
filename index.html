@@ -375,14 +375,15 @@
             transition: transform 0.3s ease;
             background: linear-gradient(to bottom, #fff, var(--text-muted));
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
         .skill-card:hover {
-            background: rgba(0, 242, 254, 0.08);
+            background: rgba(255, 255, 255, 0.1);
             border-color: var(--primary);
-            transform: translateY(-8px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            transform: translateY(-8px) scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 242, 254, 0.2);
         }
 
         .skill-card:hover i {
@@ -390,19 +391,20 @@
             -webkit-text-fill-color: initial; /* Show original color if applicable */
         }
 
-        /* Specific colors for DevIcons on hover */
-        .skill-card:hover .devicon-html5-plain { color: #E34F26; -webkit-text-fill-color: #E34F26; }
-        .skill-card:hover .devicon-css3-plain { color: #1572B6; -webkit-text-fill-color: #1572B6; }
-        .skill-card:hover .devicon-javascript-plain { color: #F7DF1E; -webkit-text-fill-color: #F7DF1E; }
-        .skill-card:hover .devicon-react-original { color: #61DAFB; -webkit-text-fill-color: #61DAFB; }
-        .skill-card:hover .devicon-nodejs-plain { color: #339933; -webkit-text-fill-color: #339933; }
-        .skill-card:hover .devicon-python-plain { color: #3776AB; -webkit-text-fill-color: #3776AB; }
-        .skill-card:hover .devicon-java-plain { color: #007396; -webkit-text-fill-color: #007396; }
-        .skill-card:hover .devicon-git-plain { color: #F05032; -webkit-text-fill-color: #F05032; }
-        .skill-card:hover .fa-brain { color: #FFD700; -webkit-text-fill-color: #FFD700; }
-        .skill-card:hover .fa-network-wired { color: #00FF7F; -webkit-text-fill-color: #00FF7F; }
-        .skill-card:hover .fa-robot { color: #FF69B4; -webkit-text-fill-color: #FF69B4; }
-        .skill-card:hover .fa-database { color: #4479A1; -webkit-text-fill-color: #4479A1; }
+        /* Specific colors and glow for DevIcons on hover */
+        .skill-card:hover .devicon-html5-plain { color: #E34F26; text-shadow: 0 0 15px rgba(227, 79, 38, 0.4); }
+        .skill-card:hover .devicon-css3-plain { color: #1572B6; text-shadow: 0 0 15px rgba(21, 114, 182, 0.4); }
+        .skill-card:hover .devicon-javascript-plain { color: #F7DF1E; text-shadow: 0 0 15px rgba(247, 223, 30, 0.4); }
+        .skill-card:hover .devicon-react-original { color: #61DAFB; text-shadow: 0 0 15px rgba(97, 218, 251, 0.4); }
+        .skill-card:hover .devicon-nodejs-plain { color: #339933; text-shadow: 0 0 15px rgba(51, 153, 51, 0.4); }
+        .skill-card:hover .devicon-python-plain { color: #3776AB; text-shadow: 0 0 15px rgba(55, 118, 171, 0.4); }
+        .skill-card:hover .devicon-java-plain { color: #007396; text-shadow: 0 0 15px rgba(0, 115, 150, 0.4); }
+        .skill-card:hover .devicon-git-plain { color: #F05032; text-shadow: 0 0 15px rgba(240, 80, 50, 0.4); }
+        .skill-card:hover .devicon-github-original { color: #fff; text-shadow: 0 0 15px rgba(255, 255, 255, 0.4); }
+        .skill-card:hover .fa-brain { color: #a855f7; text-shadow: 0 0 15px rgba(168, 85, 247, 0.4); }
+        .skill-card:hover .fa-network-wired { color: #3b82f6; text-shadow: 0 0 15px rgba(59, 130, 246, 0.4); }
+        .skill-card:hover .fa-robot { color: #f59e0b; text-shadow: 0 0 15px rgba(245, 158, 11, 0.4); }
+        .skill-card:hover .fa-database { color: #06b6d4; text-shadow: 0 0 15px rgba(6, 182, 212, 0.4); }
 
         .skill-name {
             font-size: 14px;
@@ -921,7 +923,7 @@
                 <!-- Certificate 2 -->
                 <div class="glass-card project-card">
                     <div class="project-img-wrapper" style="height: 180px;">
-                        <img src="Screenshot 2026-03-22 192828.png" alt="Infosys GenAI Certificate"
+                        <img src="infosys_cert.png" alt="Infosys GenAI Certificate"
                             style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="project-info" style="padding: 20px;">
@@ -943,7 +945,7 @@
                 <!-- Certificate 3 -->
                 <div class="glass-card project-card">
                     <div class="project-img-wrapper" style="height: 180px;">
-                        <img src="Screenshot 2026-03-22 193528.png" alt="Infosys ChatGPT Prompt Engineering Certificate"
+                        <img src="infosys_cert.png" alt="Infosys ChatGPT Prompt Engineering Certificate"
                             style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="project-info" style="padding: 20px;">
